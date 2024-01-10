@@ -1,18 +1,19 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import HomeScreen from './screens/HomeScreen';
 
 const App = () => {
   return (
-    <View>
-      <Text style={styles.container}>Fitness App</Text>
+    <View style={styles.container}>
+      <HomeScreen/>
     </View>
-  );
-};
+  )
+}
 
 export default App;
 
 const styles = StyleSheet.create({
   container: {
-    fontSize: 40,
+    flex: 1
   }
 })
